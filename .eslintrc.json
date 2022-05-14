@@ -4,7 +4,9 @@
 		"commonjs": true,
 		"es2021": true
 	},
-	"extends": ["airbnb-base"],
+	"extends": [
+		"airbnb-base"
+	],
 	"parserOptions": {
 		"ecmaVersion": "latest"
 	},
@@ -13,6 +15,8 @@
 		"comma-dangle": "off",
 		"linebreak-style": "off",
 		"indent": "off",
-		"comma-spacing": "off"
+		"comma-spacing": "off",
+		"consistent-return": "off",
+		"object-curly-newline": "off"
 	}
 }

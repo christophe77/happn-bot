@@ -641,14 +641,14 @@ globals@^13.6.0, globals@^13.9.0:
   dependencies:
     type-fest "^0.20.2"
 
-happn-api@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/happn-api/-/happn-api-1.0.2.tgz#ab6b86f77a76288f28e8c14d87fec3c2f736552a"
-  integrity sha512-wfcpn5GdZmqnLdGbKB/tZMUPcu3tRBn+msM/zaah8khsQfp1PXfktFZIT3GSY+Yg2OelWvczwn/QDWNNprtPrw==
+happn-api@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/happn-api/-/happn-api-1.0.3.tgz#15f9c7fc807580d56ca09aeea6d4d3c6dca96cc1"
+  integrity sha512-Aer1TSZCZKS2gNtyRV+UIb7xqq34RF7bJHyZo2xgwV0sZLeMcDZMnFBklau7nfnbFnhYW3sNduxBZt+AM6wdxw==
   dependencies:
     axios "^0.26.1"
     puppeteer "^13.7.0"
-    yajdb "^1.0.9"
+    yajdb "^1.2.0"
 
 has-bigints@^1.0.1, has-bigints@^1.0.2:
   version "1.0.2"
@@ -1392,10 +1392,10 @@ ws@8.5.0:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.5.0.tgz#bfb4be96600757fe5382de12c670dab984a1ed4f"
   integrity sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==
 
-yajdb@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/yajdb/-/yajdb-1.0.9.tgz#81f2b80d1fc7e7b9dda502b24e1dc68ca06e238e"
-  integrity sha512-ht11IbR+3Fjr8Jtvcosez949C+fsfLgT45whHAq19aAV2rjfCBc2nFzZDf8ieNt99SYzuvdq5fzoa+tAK0v50Q==
+yajdb@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/yajdb/-/yajdb-1.2.0.tgz#bfa841fae02d8499e85af8575612a304e1ad0239"
+  integrity sha512-wiaaRgfD0nSnV+0Cn0/bxeLLF38qOxTLfrOaL3xBMLSAMPasrIn3C+fJPQPfG+pBUgWneQ32UDn4ExdTYCSq+g==
   dependencies:
     lodash "^4.17.21"
 
