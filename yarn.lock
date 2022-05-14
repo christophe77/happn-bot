@@ -641,10 +641,10 @@ globals@^13.6.0, globals@^13.9.0:
   dependencies:
     type-fest "^0.20.2"
 
-happn-api@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/happn-api/-/happn-api-1.0.1.tgz#9d9ec613171483282145a80cac8e36a8ee33a493"
-  integrity sha512-ytCV5YPyj42v8uCut1u+0V44f+v/HplQSdWQ9GUMM/pbjI0+HZv0o6sJAwqtHx893ZRePNTa9Vl24wd62JmVeQ==
+happn-api@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/happn-api/-/happn-api-1.0.2.tgz#ab6b86f77a76288f28e8c14d87fec3c2f736552a"
+  integrity sha512-wfcpn5GdZmqnLdGbKB/tZMUPcu3tRBn+msM/zaah8khsQfp1PXfktFZIT3GSY+Yg2OelWvczwn/QDWNNprtPrw==
   dependencies:
     axios "^0.26.1"
     puppeteer "^13.7.0"
@@ -1082,11 +1082,6 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
-
-prettier@^2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
-  integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
 
 progress@2.0.3:
   version "2.0.3"
