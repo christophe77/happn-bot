@@ -45,7 +45,7 @@ async function handleRecommandation(user) {
     const userHasAllCriterias = checkCriterias(user, criterias);
     let renewableLikes = -1;
     if (userHasAllCriterias && (renewableLikes === -1 || renewableLikes > 2)) {
-        delay(2000);
+        await delay(2000);
         try {
             const likeResponse = await like(id, user.picture.id,);
             const { renewable_likes } = likeResponse.data;
