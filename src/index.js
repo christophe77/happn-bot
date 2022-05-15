@@ -38,14 +38,17 @@ async function handleRecommandation(user) {
     criteriaGender: 'female',
     criteriaMinPictures: 3,
     criteriaTraits: [
-      { name: 'Looking for', value: 'I’ll know when I find it' },
+      { name: 'Smoking', value: 'Not a fan, but whatever' },
+      { name: 'Kids', value: 'I love the ones I have' },
     ],
   };
   const userHasAllCriterias = checkCriterias(user, criterias);
+  console.log(userHasAllCriterias, first_name)
   let renewableLikes = -1;
-  if (userHasAllCriterias && (renewableLikes === -1 || renewableLikes > 2)) {
+  if (userHasAllCriterias) {
     try {
-        await delay(2000);
+      await delay(2000);
+      console.log(id, user.picture.id)
       const likeResponse = await like(id, user.picture.id);
       const { renewable_likes } = likeResponse.data;
       renewableLikes = renewable_likes;
@@ -56,8 +59,6 @@ async function handleRecommandation(user) {
     } catch (error) {
       console.log(error);
     }
-  } else {
-    console.log('no more likes');
   }
 }
 
