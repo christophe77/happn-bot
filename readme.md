@@ -1,7 +1,7 @@
 # HAPPN BOT - NODEJS
 
 Bot for happn dating app including facebook login, like and dislike, with or without criterias.
-I'm using happn-api package from (https://www.npmjs.com/package/happn-api)[https://www.npmjs.com/package/happn-api].
+I'm using happn-api package from [https://www.npmjs.com/package/happn-api](https://www.npmjs.com/package/happn-api).
 
 ## CONFIG
 
