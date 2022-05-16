@@ -9,20 +9,16 @@ async function startBot(criterias) {
         console.log(colors.bgRed, "login failed", colors.reset);
     }
 }
-// uncomment to test
-// const criterias = {
-//     criteriaMinAge: 34,
-//     criteriaMaxAge: 40,
-//     criteriaGender: 'female',
-//     criteriaMinPictures: 3,
-//     criteriaTraits: [
-//         { name: 'Smoking', value: 'Not a fan, but whatever' },
-//         { name: 'Kids', value: 'I love the ones I have' },
-//     ],
-// };
-// startBot();
 
-const happnBot = {
-    startBot
-}
-module.exports = happnBot
+const criterias = {
+    criteriaMinAge: 34,
+    criteriaMaxAge: 40,
+    criteriaGender: 'female',
+    criteriaMinPictures: 3,
+    criteriaTraits: [
+        { name: 'Smoking', value: 'Not a fan, but whatever' },
+        { name: 'Kids', value: 'I love the ones I have' },
+        { name: 'Partying', value: 'I’m in bed by midnight' },
+    ],
+};
+startBot(criterias);
