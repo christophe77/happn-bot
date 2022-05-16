@@ -52,3 +52,5 @@ const criteriaList = [
         ]
     }
 ]
+
+module.exports = criteriaList;

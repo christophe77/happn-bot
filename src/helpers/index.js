@@ -1,5 +1,7 @@
 function checkAge(minAge, maxAge, userAge) {
-  return minAge <= userAge <= maxAge;
+  const minAgeIsOk = userAge >= minAge;
+  const maxAgeIsOk = userAge <= maxAge;
+  return minAgeIsOk && maxAgeIsOk;
 }
 function checkGender(gender, userGender) {
   return gender === userGender;
