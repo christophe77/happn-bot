@@ -1,5 +1,9 @@
 const happnBot = require("./src/index.js");
 
+const facebookAuth = {
+
+};
+
 const criterias = {
     criteriaMinAge: 34,
     criteriaMaxAge: 40,

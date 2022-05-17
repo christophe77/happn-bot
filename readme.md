@@ -6,7 +6,11 @@ I'm using happn-api package from [https://www.npmjs.com/package/happn-api](https
 ## CONFIG
 
 Create a .env file at the root of the project.
-Copy / paste the content of .env.exemple file and fill your facebook credentials.
+Add your facebook account details in it :
+
+    FACEBOOK_EMAIL=email@gmail.com
+    FACEBOOK_PASSWORD=YoUrPaSsWoRd
+
 Edit ./src/index.js with your own criterias.
 And then...
 
