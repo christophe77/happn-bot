@@ -28,7 +28,6 @@ async function handleWithCriterias(user, savePictures, criterias) {
     } else {
         try {
             await dislike(id);
-            await saveUserPictures(user);
             console.log(colors.bgYellow, `you disliked ${first_name} ${age} ${gender} ${profiles.length} pictures`, colors.reset);
             return renewableLikes || 0;
         } catch (error) {
@@ -43,7 +42,6 @@ async function handleWithoutCriterias(user, savePictures) {
         if (savePictures) {
             await saveUserPictures(user);
         }
-
         return renewableLikes || 0;
     } catch (error) {
         console.log(colors.bgRed, `like failed ${error.message}`, colors.reset);

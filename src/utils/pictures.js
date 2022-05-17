@@ -8,7 +8,6 @@ const today = new Date().toISOString().split('T')[0];
 const todayPath = path.join(process.cwd(), "pictures", today);
 
 async function checkPicturePath(pathName) {
-
     if (!fs.existsSync(pathName)) {
         await mkdir(pathName, { recursive: true });
     }
@@ -35,9 +34,10 @@ async function saveUserPictures(user) {
     const savePicturesRootPath = path.join(todayPath, pathName);
 
     await checkPicturePath(savePicturesRootPath);
+    
     if (profiles.length > 0) {
-        profiles.forEach(async (profile, index) => {
-            const imagePath = path.join(savePicturesRootPath, index +1, '.jpg')
+        profiles.forEach(async (profile) => {
+            const imagePath = path.join(savePicturesRootPath, `${profile.id}.jpg`)
             await downloadImage(profile.url, imagePath)
         });
     }
