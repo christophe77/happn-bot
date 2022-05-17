@@ -2,13 +2,13 @@ const { recommandations } = require('happn-api').default;
 const colors = require('../utils/colors');
 const handleRecommandation = require("./handleRecommandation");
 
-async function processRecommandations(criterias) {
+async function processRecommandations(savePictures, criterias) {
     const myRecommandations = await recommandations();
     let renewableLikes = -1;
     myRecommandations.data.forEach(async (recommandation) => {
         try {
             if (renewableLikes === -1 || renewableLikes > 0) {
-                const remainingLike = await handleRecommandation(recommandation.content.user, criterias);
+                const remainingLike = await handleRecommandation(recommandation.content.user, savePictures, criterias);
                 renewableLikes = remainingLike;
             } else {
                 console.log(colors.bgRed, "no more likes available", renewableLikes, colors.reset);
