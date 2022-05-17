@@ -1,7 +1,11 @@
 {
 	"name": "happn-bot",
-	"version": "1.0.0",
-	"main": "index.js",
+	"version": "1.0.1",
+	"type": "module",
+	"main": "./src/index.js",
+	"exports": {
+		"require": "./src/index.js"
+	},
 	"author": "christophe bellec",
 	"license": "MIT",
 	"scripts": {
