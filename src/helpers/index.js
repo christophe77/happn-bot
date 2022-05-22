@@ -14,14 +14,10 @@ function checkTraits(traits, userTraits) {
     const userHasTrait = userTraits.find(
       (userTrait) => userTrait.short_label_localized[0].value === trait.name
     );
-    if (
-      !userHasTrait
-      || userHasTrait.answer.single.default_label !== trait.value
-    ) {
-      return false;
-    }
+    return (
+      !userHasTrait || userHasTrait.answer.single.default_label !== trait.value
+    );
   });
-  return true;
 }
 module.exports = {
   checkAge,
