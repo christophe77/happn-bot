@@ -9,15 +9,23 @@ function checkGender(gender, userGender) {
 function checkPictures(minPictures, userPicturesAmount) {
   return userPicturesAmount >= minPictures;
 }
-function checkTraits(traits, userTraits) {
-  traits.forEach((trait) => {
-    const userHasTrait = userTraits.find(
-      (userTrait) => userTrait.short_label_localized[0].value === trait.name
-    );
-    return (
-      !userHasTrait || userHasTrait.answer.single.default_label !== trait.value
-    );
+function checkTraits(myTraits, partnerTraits) {
+  let hasTraits = false;
+  myTraits.forEach((trait) => {
+    const userHasTrait = partnerTraits.find((partnerTrait) => {
+      const traitIndex = partnerTrait.short_label_localized.findIndex(
+        (traitName) => traitName.value === trait.name
+      );
+      return traitIndex !== -1;
+    });
+    if (
+      userHasTrait &&
+      userHasTrait.answer.single.default_label === trait.value
+    ) {
+      hasTraits = true;
+    }
   });
+  return hasTraits;
 }
 module.exports = {
   checkAge,
