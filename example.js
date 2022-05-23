@@ -6,11 +6,7 @@ const criterias = {
   criteriaGender: 'female',
   criteriaMinPictures: 3,
   criteriaTraits: [
-    { name: 'Looking for', value: 'A relationship' },
-    { name: 'Exercise', value: 'Occasional exercise' },
     { name: 'Smoking', value: 'Not a fan, but whatever' },
-    { name: 'Cooking', value: 'I’m a delivery expert' },
-    { name: 'Travel', value: 'Hiking & backpack' },
     { name: 'Kids', value: 'I love the ones I have' },
     { name: 'Partying', value: 'I’m in bed by midnight' },
   ],
