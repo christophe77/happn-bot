@@ -1,26 +1,26 @@
 {
-	"name": "happn-bot",
-	"version": "1.0.4",
-	"main": "./src/index.js",
-	"exports": {
-		"require": "./src/index.js"
-	},
-	"author": "christophe bellec",
-	"license": "MIT",
-	"scripts": {
-		"start": "node ./src/index.js"
-	},
-	"devDependencies": {
-		"eslint": "^7.32.0 || ^8.2.0",
-		"eslint-config-airbnb-base": "^15.0.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-import": "^2.25.2",
-		"eslint-plugin-prettier": "^4.0.0"
-	},
-	"dependencies": {
-		"axios": "^0.27.2",
-		"dotenv": "^16.0.1",
-		"happn-api": "^1.0.3",
-		"prettier": "^2.6.2"
-	}
+  "name": "happn-bot",
+  "version": "1.0.4",
+  "main": "./src/index.js",
+  "exports": {
+    "require": "./src/index.js"
+  },
+  "author": "christophe bellec",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "happn-api": "^1.0.5",
+    "prettier": "^2.6.2"
+  }
 }

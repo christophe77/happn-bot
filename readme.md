@@ -1,6 +1,7 @@
 # HAPPN BOT - NODEJS
 
 Bot for happn dating app including facebook login, like and dislike, with or without criterias.
+It includes recommandations and shortlist.
 I'm using happn-api package from [https://www.npmjs.com/package/happn-api](https://www.npmjs.com/package/happn-api).
 
 ## INSTALL
@@ -107,3 +108,4 @@ Add your facebook account details in it :
 ### INFORMATIONS
 
 I'm still working on this project, on the criteria's part to make it easyier to fill.
+I also have too many duplicate code si I need to refactor.
