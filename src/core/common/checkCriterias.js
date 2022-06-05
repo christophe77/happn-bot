@@ -1,4 +1,4 @@
-const helpers = require('../helpers');
+const helpers = require('../../helpers');
 
 function checkCriterias(user, criterias) {
   const { checkAge, checkGender, checkPictures, checkTraits } = helpers;
