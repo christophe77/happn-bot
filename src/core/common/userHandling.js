@@ -5,7 +5,7 @@ const colors = require('../../utils/colors');
 const saveUserPictures = require('../../utils/pictures');
 
 async function handleWithCriterias(user, savePictures, criterias) {
-  const { id, first_name, age, gender, profiles } = user;
+  const { id, first_name, age, profiles } = user;
   let renewableLikes = -1;
   const userHasAllCriterias = checkCriterias(user, criterias);
   if (userHasAllCriterias) {
@@ -24,7 +24,7 @@ async function handleWithCriterias(user, savePictures, criterias) {
       await dislike(id);
       console.log(
         colors.bgYellow,
-        `you disliked ${first_name} ${age} ${gender} ${profiles.length} pictures`,
+        `you disliked ${first_name} ${age} ${profiles.length} pictures`,
         colors.reset
       );
       return renewableLikes || 0;
