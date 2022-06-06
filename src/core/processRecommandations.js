@@ -4,6 +4,7 @@ const timeout = require('../utils/timeout');
 const handleRecommandation = require('./handleRecommandation');
 
 async function processRecommandations(savePictures, criterias) {
+  console.log(colors.bgBlue, 'processing recommandations', colors.reset);
   let renewableLikes = -1;
   const myRecommandations = await recommandations();
   if (myRecommandations.data?.length === 0) {

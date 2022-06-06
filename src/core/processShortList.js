@@ -4,6 +4,7 @@ const timeout = require('../utils/timeout');
 const handleShortList = require('./handleShortList');
 
 async function processShortList(savePictures, criterias) {
+  console.log(colors.bgBlue, 'processing shortlist', colors.reset);
   let renewableLikes = -1;
   const myShortList = await getShortList();
   if (myShortList.data?.shortlist_users?.length === 0) {
