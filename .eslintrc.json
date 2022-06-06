@@ -17,6 +17,9 @@
       }
     ],
     "camelcase": "off",
-    "linebreak-style": "off"
+    "linebreak-style": "off",
+    "no-promise-executor-return": "off",
+    "no-await-in-loop": "off",
+    "no-restricted-syntax": "off"
   }
 }
