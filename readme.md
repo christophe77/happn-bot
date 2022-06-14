@@ -18,6 +18,11 @@ Add your facebook account details in it :
     FACEBOOK_EMAIL=email@gmail.com
     FACEBOOK_PASSWORD=YoUrPaSsWoRd
 
+## 1.0.7 breaking change
+
+citeriaTraits "value" string has been replace by "values" string array.
+Example has been updated.
+
 ## EXAMPLE
 
     const happnBot = require('happn-bot');
@@ -30,9 +35,22 @@ Add your facebook account details in it :
         criteriaGender: 'female',
         criteriaMinPictures: 3,
         criteriaTraits: [
-            { name: 'Smoking', value: 'Not a fan, but whatever' },
-            { name: 'Kids', value: 'I love the ones I have' },
-            { name: 'Partying', value: 'I’m in bed by midnight' },
+            {
+                name: 'Exercise',
+                values: ['Occasional exercise', 'Enough cardio to keep up'],
+            },
+            {
+                name: 'Smoking',
+                values: ['Well, I smoke', 'Not a fan, but whatever'],
+            },
+            {
+                name: 'Kids',
+                values: ['I love the ones I have', 'Thanks, but no thanks'],
+            },
+            {
+                name: 'Partying',
+                values: ['I’m in bed by midnight', 'I party in moderation'],
+            },
         ],
     };
     // Save pictures of people you like

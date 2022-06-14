@@ -33,7 +33,7 @@ async function processRecommandations(savePictures, criterias) {
       } catch (error) {
         console.log(
           colors.bgRed,
-          `handleRecommandation failed ${error.message}`,
+          `processRecommandations failed ${error.message}`,
           colors.reset
         );
         renewableLikes = 0;
