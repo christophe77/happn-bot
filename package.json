@@ -1,9 +1,13 @@
 {
   "name": "happn-bot",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "./src/index.js",
   "exports": {
     "require": "./src/index.js"
+  },
+  "homepage": "https://github.com/christophe77/happn-bot",
+  "engines": {
+    "node": "12.x || 14.x || >= 16"
   },
   "author": "christophe bellec",
   "license": "MIT",
