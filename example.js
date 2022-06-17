@@ -90,7 +90,7 @@ const criteriaTraitsList = [
 
 // Save pictures of people you like
 // Will be downloaded inside /pictures/yyyy-MM-dd/first-name-age/
-const savePictures = true;
+const savePictures = false;
 
 // Start bot
 happnBot.start(savePictures, criterias);
