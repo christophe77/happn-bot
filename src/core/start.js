@@ -33,20 +33,29 @@ async function shortListLoop(savePictures, criterias) {
 }
 
 async function start(savePictures, criterias) {
-  const loginSuccess = await login();
-  if (loginSuccess) {
-    try {
-      await shortListLoop(savePictures, criterias);
-    } catch {
-      console.log(colors.bgRed, 'Getting shortlist failed', colors.reset);
+  try {
+    const loginSuccess = await login();
+
+    if (loginSuccess) {
+      try {
+        await shortListLoop(savePictures, criterias);
+      } catch {
+        console.log(colors.bgRed, 'Getting shortlist failed', colors.reset);
+      }
+      try {
+        await recommandationLoop(savePictures, criterias);
+      } catch (error) {
+        console.log(
+          colors.bgRed,
+          'Getting recommandations failed',
+          colors.reset
+        );
+      }
+    } else {
+      console.log(colors.bgRed, 'login failed', colors.reset);
     }
-    try {
-      await recommandationLoop(savePictures, criterias);
-    } catch (error) {
-      console.log(colors.bgRed, 'Getting recommandations failed', colors.reset);
-    }
-  } else {
-    console.log(colors.bgRed, 'login failed', colors.reset);
+  } catch (error) {
+    console.log(colors.bgRed, `login failed : ${error}`, colors.reset);
   }
 }
 
